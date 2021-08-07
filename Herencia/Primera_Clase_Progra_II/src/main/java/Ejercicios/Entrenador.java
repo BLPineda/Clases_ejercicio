@@ -9,26 +9,25 @@ package Ejercicios;
  *
  * @author lenin
  */
-public class Entrenador {
-    String idfederacion;
-    
-    public Entrenador (){
-        
-    }
-    static void Dirigir_partido (){
-        
-    }
-    
-    public void dirigir_entrenamiento (){
-       
+public class Entrenador extends Sele {
+   private int idfederacion;
+   
+   public Entrenador (int id, String Nombre, String Apellido, int edad, int idfederacion){
+       super (Nombre, Apellido, id, edad);
+       this.idfederacion = idfederacion;
    }
-
-    public String getIdfederacion() {
+ public void Dirigir_partido(){
+     System.out.println("Dirige el partido");
+ }
+ public void Dirigir_entrenamiento(){
+     System.out.println("Dirige el entrenamiento");
+ }
+    public int getIdfederacion() {
         return idfederacion;
     }
 
-    public void setIdfederacion(String idfederacion) {
+    public void setIdfederacion(int idfederacion) {
         this.idfederacion = idfederacion;
     }
-    
+   
 }

@@ -9,18 +9,24 @@ package Ejercicios;
  *
  * @author lenin
  */
-public class Futbolista extends Herencia_Seleccionfutbol {
+public class Futbolista extends Sele {
    private int dorsal;
    private String posicion;
    
-   public Futbolista (){
-     super ();  
+   public Futbolista (int id, String Nombre, String Apellido, int edad, String posicion, int dorsal){
+     super (Nombre, Apellido, id, edad);  
+     this.dorsal = dorsal;
+     this.posicion = posicion;
    }
    public void jugar_partido (){
-       
+       System.out.println("Jugando el partido");
    }
    public void entrenar (){
-       
+       System.out.println("Entrenando");
+   }
+   
+   public void recibir_masaje(){
+       System.out.println("Recibe el masaje");
    }
 
     public int getDorsal() {

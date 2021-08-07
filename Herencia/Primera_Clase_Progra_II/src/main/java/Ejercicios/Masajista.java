@@ -9,16 +9,18 @@ package Ejercicios;
  *
  * @author lenin
  */
-public class Masajista {
+public class Masajista extends Sele {
     private String titulacion;
     private int añosexperiencia;
     
-    public Masajista (){
-        
+    public Masajista (int id, String Nombre, String Apellido, int edad, String titulacion, int añosexperiencia){
+        super(Nombre, Apellido, id, edad);
+        this.añosexperiencia = añosexperiencia;
+        this.titulacion = titulacion;
     }
 
     public void dar_masaje (){
-       
+        System.out.println("Da masaje");
    }
     
     public String getTitulacion() {
